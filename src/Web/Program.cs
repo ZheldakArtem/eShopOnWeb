@@ -25,9 +25,11 @@ using Microsoft.IdentityModel.Tokens;
 var builder = WebApplication.CreateBuilder(args);
 builder.Logging.AddConsole();
 
+app.Logger.LogInformation("Artsem Hello world");
 builder.Configuration.AddEnvironmentVariables();
 
-if (builder.Environment.IsDevelopment() || builder.Environment.EnvironmentName == "Docker")
+var isDev = true;
+if (isDev)//(builder.Environment.IsDevelopment() || builder.Environment.EnvironmentName == "Docker")
 {
     // Configure SQL Server (local)
     Microsoft.eShopWeb.Infrastructure.Dependencies.ConfigureServices(builder.Configuration, builder.Services);
@@ -212,7 +214,7 @@ app.UseHealthChecks("/health",
             await context.Response.WriteAsync(result);
         }
     });
-if (app.Environment.IsDevelopment() || app.Environment.EnvironmentName == "Docker")
+if (isDev)//(app.Environment.IsDevelopment() || app.Environment.EnvironmentName == "Docker")
 {
     app.Logger.LogInformation("Adding Development middleware...");
     app.UseDeveloperExceptionPage();
