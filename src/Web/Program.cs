@@ -25,7 +25,6 @@ using Microsoft.IdentityModel.Tokens;
 var builder = WebApplication.CreateBuilder(args);
 builder.Logging.AddConsole();
 
-app.Logger.LogInformation("Artsem Hello world");
 builder.Configuration.AddEnvironmentVariables();
 
 var isDev = true;
@@ -156,6 +155,7 @@ builder.Services.AddBlazorServices();
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 var app = builder.Build();
+app.Logger.LogInformation("Artsem Hello world");
 
 if (useAppConfig)
 {
