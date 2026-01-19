@@ -167,86 +167,6 @@ resource sites_LearningDevOps_name_web 'Microsoft.Web/sites/config@2024-11-01' =
   }
 }
 
-resource sites_LearningDevOps_name_0af34e7527c742d8a9b13952887df46b 'Microsoft.Web/sites/deployments@2024-11-01' = {
-  parent: sites_LearningDevOps_name_resource
-  name: '0af34e7527c742d8a9b13952887df46b'
-  location: 'West Europe'
-  properties: {
-    status: 4
-    author_email: 'N/A'
-    author: 'N/A'
-    deployer: 'OneDeploy'
-    message: 'OneDeploy'
-    start_time: '2026-01-16T20:23:05.1008102Z'
-    end_time: '2026-01-16T20:24:48.9903742Z'
-    active: false
-  }
-}
-
-resource sites_LearningDevOps_name_2c3de295b4104e339c83274922892aab 'Microsoft.Web/sites/deployments@2024-11-01' = {
-  parent: sites_LearningDevOps_name_resource
-  name: '2c3de295b4104e339c83274922892aab'
-  location: 'West Europe'
-  properties: {
-    status: 4
-    author_email: 'N/A'
-    author: 'N/A'
-    deployer: 'OneDeploy'
-    message: 'OneDeploy'
-    start_time: '2026-01-16T22:28:44.7563872Z'
-    end_time: '2026-01-16T22:28:58.2877086Z'
-    active: true
-  }
-}
-
-resource sites_LearningDevOps_name_76ca6252fe9f4164ad0435adf05a10ed 'Microsoft.Web/sites/deployments@2024-11-01' = {
-  parent: sites_LearningDevOps_name_resource
-  name: '76ca6252fe9f4164ad0435adf05a10ed'
-  location: 'West Europe'
-  properties: {
-    status: 4
-    author_email: 'N/A'
-    author: 'N/A'
-    deployer: 'OneDeploy'
-    message: 'OneDeploy'
-    start_time: '2026-01-16T20:44:26.145268Z'
-    end_time: '2026-01-16T20:44:54.3803579Z'
-    active: false
-  }
-}
-
-resource sites_LearningDevOps_name_96c12ddc700c487a8a24c346a309675f 'Microsoft.Web/sites/deployments@2024-11-01' = {
-  parent: sites_LearningDevOps_name_resource
-  name: '96c12ddc700c487a8a24c346a309675f'
-  location: 'West Europe'
-  properties: {
-    status: 4
-    author_email: 'N/A'
-    author: 'N/A'
-    deployer: 'OneDeploy'
-    message: 'OneDeploy'
-    start_time: '2026-01-16T21:14:12.8161755Z'
-    end_time: '2026-01-16T21:14:39.3838964Z'
-    active: false
-  }
-}
-
-resource sites_LearningDevOps_name_ccf63b0f48da42cd8a17ece1edfa5591 'Microsoft.Web/sites/deployments@2024-11-01' = {
-  parent: sites_LearningDevOps_name_resource
-  name: 'ccf63b0f48da42cd8a17ece1edfa5591'
-  location: 'West Europe'
-  properties: {
-    status: 4
-    author_email: 'N/A'
-    author: 'N/A'
-    deployer: 'OneDeploy'
-    message: 'OneDeploy'
-    start_time: '2026-01-16T17:40:41.7156506Z'
-    end_time: '2026-01-16T17:41:33.7527113Z'
-    active: false
-  }
-}
-
 resource sites_LearningDevOps_name_sites_LearningDevOps_name_fqe9bjh6h2dsgfh4_westeurope_01_azurewebsites_net 'Microsoft.Web/sites/hostNameBindings@2024-11-01' = {
   parent: sites_LearningDevOps_name_resource
   name: '${sites_LearningDevOps_name}-fqe9bjh6h2dsgfh4.westeurope-01.azurewebsites.net'
@@ -256,3 +176,4 @@ resource sites_LearningDevOps_name_sites_LearningDevOps_name_fqe9bjh6h2dsgfh4_we
     hostNameType: 'Verified'
   }
 }
+
